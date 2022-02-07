@@ -1,0 +1,79 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overscroll-behavior: none;
+  height: 80px;
+  background: rgba(155, 155, 155, 0.1);
+  .name {
+    margin-right: 40px;
+    h1 {
+      color: black;
+      letter-spacing: 4px;
+    }
+    animation-name: rightslidein;
+    animation-duration: 2.5s;
+  }
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 20px;
+    animation-name: leftslidein;
+    animation-duration: 1.5s;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .aboutlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 33%;
+    a:hover {
+      font-size: 28px;
+    }
+  }
+  .workslink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 33%;
+    a:hover {
+      font-size: 28px;
+    }
+  }
+  .contactlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 33%;
+    a:hover {
+      font-size: 28px;
+    }
+  }
+}
+//keyframes
+
+@keyframes rightslidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes leftslidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
